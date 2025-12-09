@@ -1,0 +1,5 @@
+[build]
+  publish = "/"
+  command = ""
+[context.production.environment]
+  # Ajouter ici des variables d'environnement si nécessaire

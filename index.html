@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DGF — Couvreur à Avelin</title>
+  <meta name="description" content="Entreprise DEGRANDE — artisan couvreur à Avelin. Rénovation, nettoyage, isolation, pose de toiture." />
+  <meta name="theme-color" content="#2563eb" />
+  <style>
+    :root{
+      --accent:#2563eb;
+      --muted:#6b7280;
+      --bg:#f7f8fa;
+      --card:#ffffff;
+    }
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, Arial, sans-serif; margin:0; background:var(--bg); color:#111;}
+    .container{max-width:1100px;margin:0 auto;padding:24px;}
+    header{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 0}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:56px;height:56px;border-radius:8px;background:#eef2ff;display:flex;align-items:center;justify-content:center;color:var(--accent);font-weight:700}
+    nav ul{display:flex;gap:14px;list-style:none;padding:0;margin:0}
+    nav a{color:#111;text-decoration:none;font-weight:600}
+    .hero{background:linear-gradient(180deg, rgba(37,99,235,0.06), rgba(255,255,255,0.0));padding:28px;border-radius:12px;display:flex;gap:20px;align-items:center;margin:18px 0}
+    .hero .left{flex:1}
+    .hero h1{margin:0 0 8px;font-size:28px}
+    .hero p{margin:0;color:var(--muted)}
+    .cta{margin-top:12px}
+    .btn{background:var(--accent);color:#fff;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:600;border:none;cursor:pointer}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}
+    .card{background:var(--card);padding:16px;border-radius:10px;box-shadow:0 6px 18px rgba(2,6,23,0.06)}
+    .services h3{margin:0 0 8px}
+    .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:12px}
+    .gallery img{width:100%;height:120px;object-fit:cover;border-radius:8px}
+    footer{margin-top:28px;padding:18px 0;border-top:1px solid #e6e9ef;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+    .contact p{margin:6px 0;color:var(--muted)}
+    .reviews{margin-top:12px}
+    .review{background:#fff;padding:12px;border-radius:8px;margin-bottom:8px}
+    input,textarea{font-family:inherit}
+    @media (max-width:900px){
+      .grid{grid-template-columns:repeat(2,1fr)}
+      .gallery{grid-template-columns:repeat(2,1fr)}
+      .hero{flex-direction:column;align-items:flex-start}
+    }
+    @media (max-width:520px){
+      nav ul{display:none}
+      .grid{grid-template-columns:1fr}
+      .gallery{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden="true">DGF</div>
+        <div>
+          <div style="font-weight:700">Entreprise DEGRANDE</div>
+          <div style="font-size:13px;color:var(--muted)">Couvreur • Rénovation • Nettoyage</div>
+        </div>
+      </div>
+
+      <nav aria-label="Navigation principale">
+        <ul>
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#realisations">RÉALISATIONS</a></li>
+          <li><a href="#avis">Avis</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="left">
+          <h1 id="hero-title">Confiez vos travaux à votre couvreur à Avelin</h1>
+          <p>Créée en 2002, l’entreprise DEGRANDE se consacre à la rénovation de maisons individuelles et aux travaux de toiture dans un rayon d’une vingtaine de kilomètres autour d’Avelin (59).</p>
+          <div class="cta"><a class="btn" href="#contact">Contactez-nous</a></div>
+        </div>
+        <aside style="width:360px;" aria-label="Coordonnées rapides">
+          <div class="card">
+            <strong>Coordonnées</strong>
+            <p style="margin:8px 0;color:var(--muted)">59710 Avelin<br/>06 13 98 24 44<br/>degrande59175@gmail.com</p>
+            <p style="font-size:13px;color:var(--muted)">Horaires: Lun–Sam 8h–19h</p>
+          </div>
+        </aside>
+      </section>
+
+      <section id="services" class="services">
+        <h2 style="margin-top:18px">Nos services</h2>
+        <div class="grid" style="margin-top:12px">
+          <div class="card">
+            <h3>Couverture</h3>
+            <p style="color:var(--muted)">Réparation, remplacement et pose de tuiles, ardoises ou bac acier. Travaux réalisés dans le respect des normes.</p>
+          </div>
+          <div class="card">
+            <h3>Rénovation</h3>
+            <p style="color:var(--muted)">Rénovation complète de toitures, traitement, maçonnerie et finition pour maisons individuelles.</p>
+          </div>
+          <div class="card">
+            <h3>Nettoyage & Traitement</h3>
+            <p style="color:var(--muted)">Nettoyage haute-pression, traitement anti-mousse et protection des surfaces pour prolonger la durée de vie du toit.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="realisations" style="margin-top:18px">
+        <h2>Nos réalisations</h2>
+        <div class="gallery" aria-label="Galerie de réalisations">
+          <img src="https://via.placeholder.com/400x300?text=Réalisation+1" alt="Réalisation 1">
+          <img src="https://via.placeholder.com/400x300?text=Réalisation+2" alt="Réalisation 2">
+          <img src="https://via.placeholder.com/400x300?text=Réalisation+3" alt="Réalisation 3">
+          <img src="https://via.placeholder.com/400x300?text=Réalisation+4" alt="Réalisation 4">
+        </div>
+      </section>
+
+      <section id="avis" style="margin-top:18px">
+        <h2>Avis Google</h2>
+        <div class="reviews" aria-live="polite">
+          <div class="review">
+            <strong>Lucas Leclercq —</strong>
+            <div style="color:var(--muted);font-size:14px;margin-top:6px">J’ai réalisé la couverture de ma maison cet été, rien à redire. Professionnalisme remarquable.</div>
+          </div>
+          <div class="review">
+            <strong>Theo Dernoncourt —</strong>
+            <div style="color:var(--muted);font-size:14px;margin-top:6px">Rendez-vous parfait, intervention parfaite. Je recommande.</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" style="margin-top:18px">
+        <h2>Contact</h2>
+        <div style="display:grid;grid-template-columns:1fr 320px;gap:12px;margin-top:12px">
+          <form class="card" id="contactForm" onsubmit="handleSubmit(event)" aria-label="Formulaire de demande de devis">
+            <label for="name" style="display:block;font-weight:600;margin-bottom:8px">Demande de devis</label>
+            <input type="text" id="name" name="name" placeholder="Nom et prénom" required style="width:100%;padding:10px;border-radius:8px;border:1px solid #e6e9ef;margin-bottom:8px" />
+            <input type="email" id="email" name="email" placeholder="Email" required style="width:100%;padding:10px;border-radius:8px;border:1px solid #e6e9ef;margin-bottom:8px" />
+            <textarea id="message" name="message" placeholder="Décrivez votre projet" required style="width:100%;padding:10px;border-radius:8px;border:1px solid #e6e9ef;height:120px"></textarea>
+            <div style="display:flex;justify-content:flex-end;margin-top:12px">
+              <button type="submit" class="btn">Envoyer la demande</button>
+            </div>
+          </form>
+
+          <div class="card contact" aria-label="Coordonnées">
+            <strong>Coordonnées</strong>
+            <p style="margin:8px 0;color:var(--muted)">59710 Avelin<br/>06 13 98 24 44<br/>degrande59175@gmail.com</p>
+            <p style="font-size:13px;color:var(--muted)">Zone d’intervention ~20 km autour d’Avelin</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div style="color:var(--muted)">© <span id="year"></span> DGF — Entreprise DEGRANDE</div>
+      <div style="color:var(--muted)">Mentions légales • Politique de confidentialité</div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    function handleSubmit(e){ e.preventDefault(); alert('Formulaire simulé — configure un endpoint pour envoyer réellement le message.'); }
+  </script>
+</body>
+</html>
